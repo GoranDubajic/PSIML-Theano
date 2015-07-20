@@ -53,7 +53,7 @@ You can access the Python shell by double-clicking on `C:\SciSoft\env.bat`. Plea
 
 Finally we need to create a link library for GCC. Open up the Python shell by double-clicking on `C:\SciSoft\env.bat`. Then execute:
 ```
-gendef WinPython-64bit-2.7.10.1\python-2.7.9.amd64\python27.dll
+gendef WinPython-64bit-2.7.10.1\python-2.7.10.amd64\python27.dll
 dlltool --dllname python27.dll --def python27.def --output-lib WinPython-64bit-2.7.10.1\python-2.7.10.amd64\libs\libpython27.a
 ```
 
