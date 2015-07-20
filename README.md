@@ -1,5 +1,7 @@
 # Instructions for installing Theano on Windows for PSIML
 
+There are already offical instructions [Installation of Theano on Windows](http://www.deeplearning.net/software/theano/install_windows.html#install-windows) however please follow instructions bellow instead of offical one.
+
 We suppose that installation directory is `C:\SciSoft` and we used **x64** platform.
 
 ### 1. Installing VS2013 and CUDA
@@ -7,7 +9,7 @@ We suppose that installation directory is `C:\SciSoft` and we used **x64** platf
 - Install [CUDA 6.5](https://developer.nvidia.com/cuda-toolkit-65)
 
 ### 2. Installing Microsoft Visual C++ Compiler for Python 2.7
-- Install .Net 3.5 - on Windows 8.1 Programs and Features -> Turn Windows Features on or off
+- Install .Net 3.5 - on Windows 8.1 *Programs and Features -> Turn Windows Features on or off*
 - Install [Microsoft Visual C++ Compiler for Python 2.7](http://www.microsoft.com/en-us/download/details.aspx?id=44266)
     1. Donwload Microsoft Visual C++ Compiler for Python 2.7
     2. From Adminsitrator command prompt (e.g. *Windows + X, Command prompt (Admin)*) execute
@@ -79,5 +81,3 @@ LC=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64
 ```
 INCLUDES        +=  "-I$(TOP)/include" "-I$(TOP)/include/cudart" "-IC:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include" $(_SPACE_)
 ```
-
-These are already existing instructions [Installation of Theano on Windows](http://www.deeplearning.net/software/theano/install_windows.html#install-windows).
