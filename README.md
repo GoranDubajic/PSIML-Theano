@@ -11,7 +11,7 @@ We suppose that installation directory is `C:\SciSoft` and we used **x64** platf
 ### 2. Installing Microsoft Visual C++ Compiler for Python 2.7
 - Install .Net 3.5 - on Windows 8.1 *Programs and Features -> Turn Windows Features on or off*
 - Install [Microsoft Visual C++ Compiler for Python 2.7](http://www.microsoft.com/en-us/download/details.aspx?id=44266)
-    1. Donwload Microsoft Visual C++ Compiler for Python 2.7
+    1. Download Microsoft Visual C++ Compiler for Python 2.7
     2. From Administrator command prompt (e.g. *Windows + X, Command prompt (Admin)*) execute
 ```
 msiexec /i <path to MSI> ALLUSERS=1
@@ -21,7 +21,7 @@ msiexec /i <path to MSI> ALLUSERS=1
 - Install [TDM GCC](http://tdm-gcc.tdragon.net/download) to `C:\SciSoft\TDM-GCC-64`
 
 ### 4. Scientific Python distribution
-- Install [WinPython](https://winpython.github.io/) to `C:\SciSoft\WinPython-64bit-2.7.10.1`. Please install version **2.7.10.1** as version *2.7.9.4* (which was used in offical Theano instructions) did not work for us.
+- Install [WinPython](https://winpython.github.io/) to `C:\SciSoft\WinPython-64bit-2.7.10.1`. Please install version **2.7.10.1** as version *2.7.9.4* (which was used in official Theano instructions) did not work for us.
 
 ### 5. Configuring the Environment
 At this point, you should have installed all Theano dependencies. By default neither Python, GCC, nor Visual Studio was added to the PATH. Save the following shell script as `C:\SciSoft\env.bat` to configure the system path
