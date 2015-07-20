@@ -1,6 +1,6 @@
 # Instructions for installing Theano on Windows for PSIML
 
-There are already offical instructions [Installation of Theano on Windows](http://www.deeplearning.net/software/theano/install_windows.html#install-windows) however please follow instructions bellow instead of offical one.
+There are already official instructions [Installation of Theano on Windows](http://www.deeplearning.net/software/theano/install_windows.html#install-windows) however please follow instructions bellow instead of official one.
 
 We suppose that installation directory is `C:\SciSoft` and we used **x64** platform.
 
@@ -12,7 +12,7 @@ We suppose that installation directory is `C:\SciSoft` and we used **x64** platf
 - Install .Net 3.5 - on Windows 8.1 *Programs and Features -> Turn Windows Features on or off*
 - Install [Microsoft Visual C++ Compiler for Python 2.7](http://www.microsoft.com/en-us/download/details.aspx?id=44266)
     1. Donwload Microsoft Visual C++ Compiler for Python 2.7
-    2. From Adminsitrator command prompt (e.g. *Windows + X, Command prompt (Admin)*) execute
+    2. From Administrator command prompt (e.g. *Windows + X, Command prompt (Admin)*) execute
 ```
 msiexec /i <path to MSI> ALLUSERS=1
 ```
@@ -25,7 +25,7 @@ msiexec /i <path to MSI> ALLUSERS=1
 
 ### 5. Configuring the Environment
 At this point, you should have installed all Theano dependencies. By default neither Python, GCC, nor Visual Studio was added to the PATH. Save the following shell script as `C:\SciSoft\env.bat` to configure the system path
-```
+```cmd
 REM configuration of paths
 set VSFORPYTHON="C:\Program Files (x86)\Common Files\Microsoft\Visual C++ for Python\9.0"
 set SCISOFT=C:\SciSoft
@@ -58,8 +58,8 @@ dlltool --dllname python27.dll --def python27.def --output-lib WinPython-64bit-2
 ```
 
 ### 6. Installing Theano
-- Install [MSYSGIT](http://msysgit.github.io/)
-- Open up the Git Shell in the directory in which you want to install Theano and execute
+- Install [MSYSGIT](http://msysgit.github.io/) with component *Windows Explorer integration -> Git Bash Here*
+- Open up the Git Shell in the directory (from file explorer right click in the directory and choose *Git Bash Here*) in which you want to install Theano and execute
 ```
 git clone https://github.com/Theano/Theano.git --branch rel-0.7
 ```
