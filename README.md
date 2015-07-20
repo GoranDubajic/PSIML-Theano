@@ -56,6 +56,7 @@ Finally we need to create a link library for GCC. Open up the Python shell by do
 gendef WinPython-64bit-2.7.10.1\python-2.7.10.amd64\python27.dll
 dlltool --dllname python27.dll --def python27.def --output-lib WinPython-64bit-2.7.10.1\python-2.7.10.amd64\libs\libpython27.a
 ```
+Expected output for the first command is `* [WinPython-64bit-2.7.10.1\python-2.7.10.amd64\python27.dll] Found PE+ image` while for the second one is empty.
 
 ### 6. Installing Theano
 - Install [MSYSGIT](http://msysgit.github.io/) with component *Windows Explorer integration -> Git Bash Here*
