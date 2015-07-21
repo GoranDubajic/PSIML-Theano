@@ -77,8 +77,11 @@ floatX = float32
 compiler_bindir = C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64
 LC=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\lib\x64
 ```
+You may get an error “You must enter a name for a file” if you try to create this file from Windows Explorer. In that case open a command prompt and execute `notepad .theanorc` - this way notepad will create .theanorc file.
+
 
 - At the end you need to edit `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.profile` by setting this line 
 ```
 INCLUDES        +=  "-I$(TOP)/include" "-I$(TOP)/include/cudart" "-IC:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include" $(_SPACE_)
 ```
+If you cannot save the file due to permissions, open elevated command prompt (run cmd as administrator) and invoke notepad from it `notepad nvcc.profile`. 
