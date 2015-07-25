@@ -16,6 +16,7 @@ We suppose that installation directory is `C:\SciSoft` and we used **x64** platf
 ```
 msiexec /i <path to MSI> ALLUSERS=1
 ```
+Finally download the `stdint.h` header from [here](http://msinttypes.googlecode.com/svn/trunk/stdint.h) and save it as `C:\Program Files (x86)\Common Files\Microsoft\Visual C++ for Python\9.0\VC\include\stdint.h`.
 
 ### 3. Installing GCC
 - Install [TDM GCC](http://tdm-gcc.tdragon.net/download) to `C:\SciSoft\TDM-GCC-64`
@@ -63,6 +64,10 @@ Expected output for the first command is `* [WinPython-64bit-2.7.10.1\python-2.7
 - Open up the Git Shell in the directory (from file explorer right click in the directory and choose *Git Bash Here*) in which you want to install Theano and execute
 ```
 git clone https://github.com/Theano/Theano.git --branch rel-0.7
+```
+- Configuring Theano
+```
+python setup.py develop
 ```
 
 ### 7. Now some hacks to avoid *nvcc* error
